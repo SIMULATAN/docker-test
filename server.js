@@ -4,7 +4,7 @@ var server = require('http').createServer(app);
 var port = 3000;
 
 server.listen(port, function () {
-console.log('Webserver läuft und hört auf Port %d', port);
+console.log('Webserver is listening on port %d', port);
 });
 
 app.use(express.static(__dirname + '/public'));
