@@ -34,8 +34,8 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-          echo "${{secrets.GITHUB_TOKEN}}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
-          docker pull docker.pkg.github.com/simulatan/docker-test/example
-          docker stop example
-          docker rm example
-          docker run -d -p 80:3000 --name example docker.pkg.github.com/simulatan/docker-test/example
+            echo "${{secrets.GITHUB_TOKEN}}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+            docker pull docker.pkg.github.com/simulatan/docker-test/example
+            docker stop example
+            docker rm example
+            docker run -d -p 80:3000 --name example docker.pkg.github.com/simulatan/docker-test/example
