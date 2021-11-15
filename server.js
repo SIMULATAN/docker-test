@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').createServer(app);
 var port = 3000;
 
-server.listen(port, function () {
+server.listen(port, "localhost",function () {
 console.log('Webserver is listening on port %d', port);
 });
 

@@ -4,12 +4,14 @@
     "description": "a simple webserver in nodejs",
     "main": "server.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node server.js"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
     },
     "author": "_SIM_",
     "license": "ISC",
     "dependencies": {
-      "express": "^4.17.1"
+        "@types/express": "^4.17.13",
+        "@types/node": "^16.11.7",
+        "express": "^4.17.1"
     }
-  }
+}
