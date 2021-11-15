@@ -1,17 +1,29 @@
 {
-    "name": "nodejs-example",
-    "version": "1.0.0",
-    "description": "a simple webserver in nodejs",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js"
-    },
-    "author": "_SIM_",
-    "license": "ISC",
-    "dependencies": {
-        "@types/express": "^4.17.13",
-        "@types/node": "^16.11.7",
-        "express": "^4.17.1"
-    }
+  "name": "nodejs-example",
+  "version": "1.0.0",
+  "description": "a simple webserver in nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node index.js"
+  },
+  "author": "_SIM_",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.7",
+    "express": "^4.17.1",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIMULATAN/docker-test.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/SIMULATAN/docker-test/issues"
+  },
+  "homepage": "https://github.com/SIMULATAN/docker-test#readme"
 }
