@@ -2,8 +2,9 @@ FROM node:14
 
 EXPOSE 3000
 
-ADD . .
+ENV folder=docker-test-server
 
-RUN npm install
+ADD index.js /node_modules package.json package-lock.json $folder
+RUN cd $folder && npm install
 
-CMD node server.js
+ENTRYPOINT cd $folder && npm start
